@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerenciamento de Softwares</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Gerenciamento de Softwares</h1>
+
+    <!-- Campo de pesquisa de software -->
+    <div id="search-container">
+        <input type="text" id="search-input" placeholder="Digite o nome do software">
+        <button onclick="searchSoftware()">Buscar</button>
+    </div>
+
+    <!-- Resultados da pesquisa -->
+    <div id="results-container">
+        <h2>Resultados:</h2>
+        <ul id="results-list"></ul>
+    </div>
+
+    <!-- Seção de blocos -->
+    <div id="blocos-container">
+        <h2>Blocos</h2>
+        <div class="bloco" onclick="selectBloco('Bloco 1')">Bloco 1</div>
+        <div class="bloco" onclick="selectBloco('Bloco 2')">Bloco 2</div>
+        <div class="bloco" onclick="selectBloco('Bloco 3')">Bloco 3</div>
+    </div>
+
+    <!-- Detalhes do bloco e salas -->
+    <div id="detalhes-container" style="display: none;">
+        <h2 id="detalhes-titulo"></h2>
+        <div id="salas-container"></div>
+        <button onclick="voltar()">Voltar aos Blocos</button>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
